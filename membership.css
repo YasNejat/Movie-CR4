@@ -1,0 +1,149 @@
+nav {
+	font-size: 1.3rem;
+    width: 100%;
+    z-index: 1000000;
+    top: 0px;
+    position: sticky !important;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* animation.css */
+
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s;
+    /* don't forget to set a duration! */
+}
+
+a.button {
+    background-color: #FA2742;
+    border-radius: 100px;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+}
+
+.ownColor {
+    filter: grayscale(100%);
+}
+
+li>a {
+    color: white!important;
+}
+
+.btn-dark {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: #2cdc38;
+}
+
+/* crd style */
+
+body {
+    background-color: #100e17;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cardGroup {
+    margin: 10% auto;
+    vertical-align: middle;
+}
+
+.card {
+  
+    background-color: #7f7f83;
+    box-shadow: -1rem 0 3rem rgb(16, 15, 15);
+    /* transition: width 2s, height 4s; */
+    color: #dedae9;
+}
+
+.card:hover {
+    
+    background-color: #100e17;
+    box-shadow: -1rem 0 3rem rgb(33, 32, 32);
+    color: white;
+}
+
+#ownStyle {
+    /* box-shadow: -1rem 0 3rem rgb(22, 22, 22); */
+    display: none;
+    border-radius: 10px;
+    background: rgba(111, 109, 109, 0.4);
+    position: relative;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.card1 {
+    border-radius: 10px;
+    box-shadow: 0 0 1rem 0 rgba(12, 0, 0, 0.2);
+    border: none;
+    max-width: 450px;
+    border-radius: 15px;
+    margin: 150px 0 150px;
+    padding: 35px;
+    padding-bottom: 20px !important;
+}
+
+.heading {
+    color: #C1C1C1;
+    font-size: 14px;
+    font-weight: 500
+}
+
+.visaImg {
+    transform: translate(160px, -10px)
+}
+
+.text-warning {
+    font-size: 12px;
+    font-weight: 500;
+    color: #c9965f!important
+}
+
+#cno {
+    transform: translateY(-10px)
+}
+
+input {
+    border-bottom: 1.5px solid #E8E5D2 !important;
+    font-weight: bold;
+    border-radius: 0;
+    border: 0
+}
+
+.form-group input:focus {
+    border: 0;
+    outline: 0
+}
+
+.col-sm-5 {
+    padding-left: 90px
+}
+
+.btn {
+    width: 60px;
+    border: none;
+    border-radius: 10px
+}
+
+.btn:focus {
+    box-shadow: none
+}
+
+@media (max-width: 575.98px) {
+    p, h1, h2, span {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,150 @@
+ let movies = 
+
+    `[
+  {
+    "genre":"comedy",
+    "rate":"7.3",
+    "price":"12",
+    "movieName": "Comedy1",
+    "image": "img/black.jpg",
+    "description":"Lorem ipsum dolor",
+    "releaseDate":"12,5, 2021",
+    "likes": 0
+    
+    
+  },
+
+  {
+    "genre":"drama",
+    "rate":"7.3",
+    "price":"12",
+    "movieName": "Drama2",
+    "image": "img/locked.jpg",
+    "description":"Lorem ipsum dolor",
+    "releaseDate":"10,5, 2021",
+    "likes": 0
+
+  },
+  {
+    "genre":"action",
+    "rate":"6.3",
+    "price":"9.90",
+    "movieName": "Action3",
+    "image": "img/outside.jpg",
+    "description": "Lorem ipsum dolor",
+    "releaseDate":"March 5, 2021",
+    "likes": 0
+
+  },
+  
+  {
+    "genre":"drama",
+    "rate":"7.3",
+    "price":"12.90",
+    "movieName": "Drama4",
+    "image": "img/america.jpg",
+    "description": "Lorem ipsum dolor",
+    "releaseDate":"March 5, 2021",
+    "likes": 0
+
+  },
+  
+  {
+    "genre":"horror",
+    "rate":"8.3",
+    "price":"11",
+    "movieName": "horror5",
+    "image": "img/walking.jpg",
+    "description": "Lorem ipsum dolor",
+    "releaseDate":"March 5, 2021",
+    "likes": 0
+
+  },
+  
+  {
+    "genre":"horror",
+    "rate":"7.3",
+    "price":"12",
+    "movieName": "Horror6",
+    "image": "img/newark.jpg",
+    "description": "Lorem ipsum dolor",
+    "releaseDate":"March 5, 2021",
+    "likes": 0
+
+  },
+  {
+    "genre":"drama",
+    "rate":"8.3",
+    "price":"10",
+    "movieName": "Drama7",
+    "image": "img/newark.jpg",
+    "description": "Lorem ipsum dolor",
+    "releaseDate":"March 5, 2021",
+    "likes": 0
+
+  },
+  {
+    "genre":"horror",
+    "rate":"6.3",
+    "price":"8",
+    "movieName": "Horror8",
+    "image": "img/america.jpg",
+    "description": "Lorem ipsum dolor",
+    "releaseDate":"March 5, 2021",
+    "likes": 0
+
+  },
+  {
+    "genre":"horror",
+    "rate":"7.3",
+    "price":"12",
+    "movieName":"Horror9",
+    "image": "img/locked.jpg",
+    "description": "Lorem ipsum dolor",
+    "releaseDate":"March 5, 2021",
+    "likes": 0
+
+  },
+  {
+    "genre":"action",
+    "rate":"7.3",
+    "price":"12",
+    "movieName":"Action10" ,
+    "image": "img/walking.jpg",
+    "description": "Lorem ipsum dolor",
+    "releaseDate":"March 5, 2021",
+    "likes": 0
+
+  },
+  {
+    "genre":"horror",
+    "price":"12",
+    "rate":"8.3",
+    "movieName":"Horror11",
+    "image": "img/black.jpg",
+    "description": "Lorem ipsum dolor",
+    "releaseDate":"March 5, 2021",
+    "likes": 0
+
+  },
+  {
+    "genre":"action",
+    "rate":"7.3",
+    "price":"10.90",
+    "movieName":"Horror12",
+    "image": "img/newark.jpg",
+    "description": "Lorem ipsum dolor",
+    "releaseDate":"March 5, 2021",
+    "likes": 0
+
+  }
+  
+]` 
+ 
+
+
+
+
+    
+
+    

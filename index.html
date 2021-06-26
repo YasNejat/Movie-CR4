@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap CSS - CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- animation.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400"
+      rel="stylesheet"
+    />
+    <!-- icon 8 -->
+    <a href="https://icons8.com/icon/82788/facebook-like"></a>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Movie Website</title>
+  </head>
+  <body>
+    <!-- Navbar start-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://img.icons8.com/pastel-glyph/64/fa314a/movie.png"/></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CATEGORIES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    onclick="filterMovies('action')"
+                    href="#"
+                    >ACTION</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    onclick="filterMovies('comedy')"
+                    href="#"
+                    >COMEDY</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    onclick="filterMovies('drama')"
+                    href="#"
+                    >DRAMA</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    onclick="filterMovies('horror')"
+                    href="#"
+                    >HORROR</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                style="color: #fa2742 !important"
+                href="memmbership.html"
+                tabindex="-1"
+                >Membership</a
+              >
+            </li>
+            <li class="nav-item">
+              <button
+              type="button"
+              class="btn btnModal btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Rent Movie
+            </button>
+      
+            <!-- Modal -->
+            </li>
+          </ul>
+          <!-- <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-danger" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- heroSection start -->
+    <div class="container mt-5">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.pexels.com/photos/4474015/pexels-photo-4474015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              class="d-block w-100 ownColor"
+              alt="membership-pic"
+            />
+
+            <div class="carousel-caption d-none d-md-block">
+              
+              <div>
+                <a href="memmbership.html" class="button animate__headShake">Get Membership</a>
+              </div>
+
+              <h3 class="text-light fs-4" >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, dolorem?
+              </h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/3754434/pexels-photo-3754434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              class="d-block w-100"
+              alt="comedy-movie"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="text-dark" >Second slide label</h2>
+              <p class="text-dark">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ipsum!
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/3137890/pexels-photo-3137890.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              class="d-block w-100 ownColor"
+              alt="coming-soon"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-warning" >Third slide label</h5>
+              <p  class="text-danger">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, possimus?
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      
+    </div>
+    <!-- heroSection end -->
+
+    <!-- here the js dynamic code start -->
+  
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-2" id="printMovies">
+
+
+ 
+
+        
+          <!-- here the js dynamic code will be inserted  -->
+        </div>
+      </div>
+    
+    <!-- here the js dynamic code start -->
+   
+
+    <div class="container">
+      <!-- Button trigger modal -->
+      
+     
+      <div
+        class="modal  fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content modalContainer">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">YOUR RENT CARD</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!--cart starts here  -->
+              <div id="cart" class="mt-2 container containerRent">
+                <div class="cart-header h4 border-bottom row m-5">
+                  <span class="cart-item col-6 mb-3 fs-5">ITEM</span>
+                  <span class="cart-price col-3 mb-3 fs-5">PRICE</span>
+                  <span class="cart-quantity col-3 mb-3 fs-5">QUANTITY</span>
+                </div>
+                <div id="cart-items">
+                  <!-- empty cart -->
+                </div>
+                <div id="total" class="cart-total">
+                  <strong class="cart-total-title">Total</strong>
+
+                  <span id="price" class="cart-total-price h4">$0.00</span>
+                </div>
+                <div class="d-flex justify-content-center m-4">
+                  <button
+                    id="btn-purchase"
+                    class="btn btn-primary btn-purchase"
+                    type="button"
+                  >
+                    Check out <br /><i
+                      class="fa fa-handshake-o"
+                      style="font-size: 36px; color: white"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- footer -->
+    <nav
+      class="navbar navbar-dark justify-content-center mt-5"
+      style="height: 10vh; background-color: black"
+    >
+      <ul class="nav">
+        <li class="nav-item">
+          <h3 class="nav-link active text-light"><img src="https://img.icons8.com/pastel-glyph/64/fa314a/movie.png" alt="logo" /></h3>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Bootstrap Js - CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <!-- accessing data from JSON file -->
+    <script src="js/data.json"></script>
+    <!-- external JS file - only for this project -->
+    <script src="js/myscript.js"></script>
+  </body>
+</html>

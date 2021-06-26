@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- font Awsome -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <!-- Bootstrap CSS - CDN -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+        crossorigin="anonymous"
+      />
+      <!-- animation.css -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400"
+        rel="stylesheet"
+      />
+      <!-- icon 8 -->
+      <a href="https://icons8.com/icon/82788/facebook-like"></a>
+      <!-- style css -->
+      <link rel="stylesheet" href="membership.css"/>
+    <title>Memmbership</title>
+</head>
+<body>
+ <!-- Navbar start -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://img.icons8.com/pastel-glyph/64/fa314a/movie.png"/></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="index.html"
+            >Home</a
+          >
+        </li>
+
+       
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            style="color: #fa2742 !important"
+            href="memmbership.html"
+            tabindex="-1"
+            >Membership</a
+          >
+        </li>
+      </ul>
+      <!-- <form class="d-flex">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-danger" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+
+<!-- cards for Membership -->
+<div class="container">
+
+<h1 class="p-5 text-danger">MEMBERSHIP LIST</h1>
+
+<div class="row row-cols-1 row-cols-md-3  cardGroup" id="cardMembers">
+
+  <div class="col">
+    <div class="card">
+   
+      <div class="card-body pt-5">
+        <h3 class="card-title">PARTLY</h3>
+        <h5 class="card-title">MEMBERSHIP</h5>
+        <p><i class="fa fa-usd" style="font-size:24px"></i><span style="font-size:35px ">100</span></p>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illoatis quis offitates perspiciatis.</p>
+        <a href="#" class="button animate__headShake" id="button" onclick="form()" >Membership</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+     
+      <div class="card-body  pt-5">
+        <h3 class="card-title">STANDARD</h3>
+        <h5 class="card-title">MEMBERSHIP</h5>
+        <p><i class="fa fa-usd" style="font-size:24px"></i><span style="font-size:35px" >150</span></p>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illoatis quis offitates perspiciatis.</p>
+        <a href="#" class="button animate__headShake"  onclick="form()">Membership</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+   
+      <div class="card-body  pt-5">
+        <h3 class="card-title">SYSTEM</h3>
+        <h5 class="card-title">MEMBERSHIP</h5>
+        <p><i class="fa fa-usd" style="font-size:24px"></i><span style="font-size:35px" >200</span></p>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illoatis quis offitates perspiciatis.</p>
+        <a href="#" class="button animate__headShake" onclick="form()">Membership</a>
+      </div>
+    </div>
+  </div>
+</div> <!-- Navbar End -->
+
+
+<!-- Form -->
+<div class="container-fluid" id="ownStyle">
+  <div class="row d-flex justify-content-center">
+      <div class="col-sm-12">
+          <div class="card1 mx-auto">
+              <p class="heading">PAYMENT DETAILS</p>
+              <form class="card-details ">
+                  <div class="form-group mb-0">
+                      <p class="text-warning mb-0">Card Number</p> <input type="text" id="cardNumber" name="card-num"  placeholder="1234 5678 9012 3457" size="17" id="cno" minlength="19" maxlength="19"> <img class="visaImg" src="https://img.icons8.com/color/48/000000/visa.png" width="64px" height="60px" />
+                  </div>
+                  <div class="form-group">
+                      <p class="text-warning mb-0">Cardholder's Name</p> <input type="text" id="name" name="name" placeholder="Name" size="17">
+                  </div>
+                  <div class="form-group pt-2">
+                      <div class="row d-flex">
+                          <div class="col-sm-4">
+                              <p class="text-warning mb-0">Expiration</p><input type="text" name="exp" placeholder="MM/YYYY" size="7" id="exp" minlength="7" maxlength="7">
+                          </div>
+                          <div class="col-sm-3">
+                              <p class="text-warning mb-0">Cvv</p> <input type="password" id="cvv" name="cvv" placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3">
+                          </div>
+                          <div class="col-sm-5 pt-0"> <button type="button" class="btn btn-primary" onclick="onSubmit()" >Pay</button> </div>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+     <!-- Bootstrap Js - CDN -->
+     <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+     crossorigin="anonymous"
+   ></script>
+   <!-- accessing data from JSON file -->
+   <script src="js/data.json"></script>
+   <!-- external JS file - only for this project -->
+   <script src="membership.js"></script>
+   
+</body>
+</html>
+
+
+

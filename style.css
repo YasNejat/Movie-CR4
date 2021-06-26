@@ -1,0 +1,206 @@
+nav {
+  font-size: 1.3rem;
+  width: 100%;
+  z-index: 1000000;
+  top: 0px;
+  position: sticky !important;
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* animation.css */
+
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 5s;
+  /* don't forget to set a duration! */
+}
+
+a.button {
+  background-color: #fa2742;
+  border-radius: 100px;
+  padding: 1em 3em;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: 3;
+}
+
+.ownColor {
+  filter: grayscale(100%);
+}
+
+li > a {
+  color: white !important;
+}
+
+.buttonLike {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: #e6eee6 !important;
+}
+
+/* crd style */
+
+body {
+  background-color: #100e17;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* .containerRent {
+	height: 100px;
+	width: 100rem;
+	
+	display:flex;
+} */
+.modalContainer {
+  background-color: #17141d !important;
+  color: white;
+}
+
+.ownSize {
+  color: #fa2742 !important;
+}
+
+.card {
+  display: flex;
+  height: 330px;
+  width: 350px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.8s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  display: flex;
+  height: 330px;
+  width: 350px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+  transition: 0.1s ease-out;
+  position: relative;
+  left: 0px;
+  margin-bottom: 40px;
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+.card:hover .img-fluid {
+  opacity: 0.1;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover .filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  transition: 0.6s ease-out;
+  margin-left: 100%;
+  width: 120px;
+  color: rgb(242, 231, 231);
+  display: block;
+}
+
+.filledbar {
+  margin: -50%;
+  transition: 0.4s ease-out;
+  display: none;
+}
+
+.circle {
+  position: absolute;
+  top: 75%;
+  left: calc(90% - 60px);
+}
+.circle img {
+  color: blue !important;
+}
+
+.btnModal {
+  margin-top: 10%;
+  margin-left: 45% !important;
+  box-shadow: -1rem 0 2rem #000;
+  background-color: #fa2742;
+  width: 8rem;
+  border-color: #2e3033;
+}
+
+.btnModal:hover {
+  background-color: #e8818e;
+  border-color: #2e3033;
+}
+
+.product-button{
+
+	text-decoration: none!important;
+}
+
+
+.star {
+  color: yellow !important;
+}
+.ownFontSize {
+  font-size: 10px;
+}
+/* mobile */
+@media (max-width: 575.98px) {
+  .container2 {
+    margin-left: 20%;
+    width: 20rem;
+  }
+}
+/* tablet */
+
+@media (max-width: 991.98px) {
+  .container2 {
+    margin-left: 35% !important;
+    width: 60rem;
+    margin: 0% !important;
+  }
+}
